@@ -1,0 +1,12 @@
+﻿@*@model LoopLeader.Domain.Entities.Member*@
+@model LoopLeader.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Member " + @Model.UserName + " has been deleted.";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Successfully deleted the member @Model.UserName.</h2>
+<div>
+    @Html.ActionLink("Done", "Index")
+</div>

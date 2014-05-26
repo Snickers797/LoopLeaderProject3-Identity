@@ -1,0 +1,15 @@
+#################
+## Visual Studio
+#################
+
+[Oo]bj
+[Bb]in
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.ncb
+*.log 
+[Tt]humbs.db 
+*.mdf
+*.ldf

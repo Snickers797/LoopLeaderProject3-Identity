@@ -1,0 +1,37 @@
+﻿@model LoopLeader.Models.EmailResponse
+@using LoopLeader.HtmlHelpers
+
+@{
+    ViewBag.Title = "Contact1";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+    //Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>Contact</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+    <title>Contact1</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <p>Your first name: @Html.TextBoxFor(x => x.FirstName) </p>
+            <p>Your last name: @Html.TextBoxFor(x => x.LastName) </p>
+            <p>Your email: @Html.TextBoxFor(x => x.Email)</p>
+            <p>Your phone: @Html.TextBoxFor(x => x.Phone)</p>
+            <p>
+                Comment: @Html.TextAreaFor(x => x.Comment)                
+            </p>
+            <input type="submit" value="Submit Request" />
+        }
+    </div>
+</body>
+</html>

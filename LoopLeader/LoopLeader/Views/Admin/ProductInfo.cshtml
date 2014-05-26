@@ -1,0 +1,29 @@
+﻿@model LoopLeader.Domain.Entities.Product
+@{
+    ViewBag.Title = "Product Info";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Member Info</h2>
+@Model.ProductName
+<br />
+@Model.Price
+<br />
+@{
+    if (Model.InStock)
+    {
+        @:IN STOCK
+    }
+    else
+    {
+        @:OUT OF STOCK
+    }
+}
+<br />
+@Model.Description
+<br />
+@Model.Category
+<br />
+@*@Model.Shipping
+<br />*@
+@Html.ActionLink("Done", "Index", "Admin")

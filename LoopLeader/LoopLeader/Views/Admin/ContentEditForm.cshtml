@@ -1,0 +1,22 @@
+﻿@model LoopLeader.Domain.Entities.Content
+
+@{
+    ViewBag.Title = "Content: Edit";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>ContentHome</h2>
+
+Section selected:<br />
+@Model.ContentID <br />
+
+@using (Html.BeginForm("ContentInfo", "Admin", Model))
+{
+    if (Model.NewText == null || Model.NewText == "")
+    {
+        Model.NewText = Model.CurrentText;
+    }
+    @Html.TextAreaFor(m => m.NewText);
+
+    <input type="submit" value="Save" />
+}

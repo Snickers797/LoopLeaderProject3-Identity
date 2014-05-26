@@ -1,0 +1,81 @@
+﻿@model LoopLeader.Models.EmailResponse
+@using LoopLeader.HtmlHelpers
+
+@{
+    ViewBag.Title = "Thankyou";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+}
+
+<h2>Thankyou</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thankyou</title>
+</head>
+<body>
+    <div>
+
+
+        @*@{
+                try
+                {
+                    WebMail.SmtpServer = "smtp.example.com";
+                    WebMail.SmtpPort = 587;
+                    WebMail.EnableSsl = true;
+                    WebMail.UserName = "mySmtpUsername";
+                    WebMail.Password = "mySmtpPassword";
+                    WebMail.From = "contact@TheLoopLeader.com";
+                    WebMail.Send("carlskeel@yahoo.com", "TheLoopLeader Form Message",
+                    "First Name:" + Model.FirstName +
+                    "Last Name:" + Model.LastName +
+                    "Email:" + Model.Email +
+                    "Phone:" + Model.Phone +
+                    "Comment:" + Model.Comment
+                    );
+                }
+                catch (Exception)
+                {
+                @:<b>Sorry - we couldn't send the email error 1111.</b>
+                }
+            }*@
+
+        @{
+            try
+            {
+
+                WebMail.SmtpServer = "smtp.mail.yahoo.com";
+                WebMail.SmtpPort = 587;//465/587
+                WebMail.EnableSsl = true;
+                WebMail.UserName = "TheLoopLeader@yahoo.com";
+                WebMail.Password = "*****";
+                WebMail.From = "contact@TheLoopLeader.com";
+                WebMail.Send("TheLoopLeader@yahoo.com", "TheLoopLeader Form Message",
+                "First Name:" + Model.FirstName +
+                "Last Name:" + Model.LastName +
+                "Email:" + Model.Email +
+                "Phone:" + Model.Phone +
+                "Comment:" + Model.Comment
+                );
+
+            }
+            catch (Exception)
+            {
+                @:<b>Sorry - we couldn't send the email server error 1111. Contact web dev team.</b>
+            }
+        }
+
+        <h1>Thank you, @Model.FirstName!</h1>
+
+        <p>We will respond asap.</p>
+
+
+    </div>
+</body>
+</html>
+
+
+
+

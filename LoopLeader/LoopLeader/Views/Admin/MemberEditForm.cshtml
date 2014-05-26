@@ -1,0 +1,24 @@
+﻿@*@model LoopLeader.Domain.Entities.Member*@
+@model LoopLeader.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Member: Edit";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Member Edit</h2>
+
+Member selected:<br />
+@Model.UserName <br />
+
+@using (Html.BeginForm("MemberInfo", "Admin", Model))
+{
+    @Html.EditorForModel();
+
+    <input type="submit" value="Save" />
+}
+
+@using (Html.BeginForm("MemberDelete", "Admin", Model))
+{
+    <br /><input type="submit" value="Delete this Member" />
+}
