@@ -9,7 +9,8 @@ namespace LoopLeader.Models
 {
     public class MemberListViewModel
     {
-        public IEnumerable<Member> Members { get; set; }
+        public string Id { get; set; }
+        public List<LoopLeader.Models.ApplicationUser> MemberList { get; set; }
         public PagingInfo PagingInfo { get; set; }
     }
 }
