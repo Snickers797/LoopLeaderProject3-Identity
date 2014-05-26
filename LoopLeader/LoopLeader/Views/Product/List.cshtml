@@ -1,0 +1,27 @@
+﻿@model LoopLeader.Models.ProductsListViewModel
+@using LoopLeader.HtmlHelpers
+
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+    //Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>The Loop Leader Price List</h2>
+
+@foreach (var p in Model.Products)
+{
+    /*<div class="item">
+        <h3>@p.Name</h3>
+        @p.Description
+        <h4>@p.Price.ToString("c")</h4>
+    </div>*/
+    Html.RenderPartial("ProductSummary", p);
+}
+<div class="pager">
+    @* Html.PageLinks returns HTML for a set  of links;
+        Params: 1) PagingInfo object, 2) Delegate -note this is a method definition in lambda notation
+        The delegate allows us to define the way the links are formed
+        Url.Action returns a string; Params: 1) controller method, 2) routeValues object *@
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
+</div>

@@ -1,0 +1,14 @@
+﻿@model LoopLeader.Models.ContentViewModel
+@{
+    ViewBag.Title = "Content";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+Select the section to modify:<br />
+@using (Html.BeginForm())
+{
+    @Html.DropDownListFor(model => model.ContentList.First().ContentID, new SelectList(Model.ContentList.AsEnumerable(), "ContentID", "ContentID"))
+    <br /><input type="submit" value="Edit" />
+}

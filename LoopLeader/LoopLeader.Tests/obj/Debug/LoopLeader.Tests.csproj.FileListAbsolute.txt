@@ -1,0 +1,221 @@
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll.config
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.pdb
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.pdb
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.pdb
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.xml
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+C:\Users\marta_000\Documents\GitHub\TheLoopLeader\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.pdb
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll.config
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.pdb
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.pdb
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.pdb
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.xml
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+C:\Users\hibba\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.pdb
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll.config
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.pdb
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.pdb
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.pdb
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.xml
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+C:\Users\marta_000\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.pdb
+=======
+C:\Users\CarlSkeel\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+C:\Users\CarlSkeel\Documents\GitHub\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll.config
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.pdb
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.pdb
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.pdb
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.xml
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+C:\Users\CarlSkeel\Documents\GitBack\Building\LooperLeader-New-\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.pdb
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll.config
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.pdb
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.pdb
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.pdb
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.xml
+C:\Users\marta_000\Documents\GitHub\LoopLeaderProject3\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.pdb
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll.config
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Tests.pdb
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Owin.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Security.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.Domain.pdb
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\LoopLeader.pdb
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Optimization.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Security.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.Razor.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\bin\Debug\Newtonsoft.Json.xml
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.csprojResolveAssemblyReference.cache
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.dll
+c:\users\marta_000\documents\visual studio 2013\Projects\LoopLeader\LoopLeader.Tests\obj\Debug\LoopLeader.Tests.pdb

@@ -1,0 +1,18 @@
+﻿@model LoopLeader.Domain.Entities.Product
+
+@{
+    ViewBag.Title = "Product: Edit";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Product Edit</h2>
+
+Product selected:<br />
+@Model.ProductName <br />
+
+@using (Html.BeginForm("ProductInfo", "Admin", Model))
+{
+    @Html.EditorForModel();
+
+    <input type="submit" value="Save" />
+}

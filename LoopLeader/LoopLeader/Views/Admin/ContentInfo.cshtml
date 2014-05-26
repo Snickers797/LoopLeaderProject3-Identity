@@ -1,0 +1,12 @@
+﻿@model LoopLeader.Domain.Entities.Content
+
+@{
+    ViewBag.Title = @Model.ContentID ;
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Content Info for @Model.ContentID </h2>
+@Html.Raw(@Model.CurrentText)
+<br />
+<br />
+@Html.ActionLink("Done", "Index", "Admin")

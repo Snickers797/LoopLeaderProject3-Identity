@@ -1,0 +1,22 @@
+﻿@model LoopLeader.Domain.Entities.Content
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+}
+
+@if (Model != null)
+{
+    <h2>@Html.Raw(@Model.CurrentText)</h2>
+}
+
+<section>
+    <section class="small"></section>
+    <section class="small"></section>
+    <section class="small"></section>
+    <section class="large"></section>
+    <section class="small"></section>
+    <section class="small"></section>
+    <section class="small"></section>
+</section>
+
