@@ -8,7 +8,7 @@ using LoopLeader.Domain.Abstract;
 
 namespace LoopLeader.Domain.Concrete
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : IProduct
     {
         private LLDbContext context = new LLDbContext();
 

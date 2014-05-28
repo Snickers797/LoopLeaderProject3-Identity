@@ -16,7 +16,6 @@
         <hr />
         @Html.ValidationSummary(true)
         <section class="form-group">
-            @Html.DisplayNameFor(model => model.FirstName)
             @Html.LabelFor(model => model.FirstName, new { @class = "control-label col-md-2" })
             <section class="col-md-10">
                 @Html.EditorFor(model => model.FirstName)

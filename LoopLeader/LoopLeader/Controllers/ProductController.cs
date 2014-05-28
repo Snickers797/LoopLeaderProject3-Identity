@@ -13,13 +13,7 @@ namespace LoopLeader.Controllers
 {
     public class ProductController : Controller
     {
-        //
-        // GET: /Product/
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-        private IProductRepository repository;
+        private IProduct repository;
         public int PageSize = 2;       // 2 products per page
         public ProductController()
         {
@@ -27,7 +21,7 @@ namespace LoopLeader.Controllers
             repository = new ProductRepository();
         }
 
-        public ProductController(IProductRepository productRepository)
+        public ProductController(IProduct productRepository)
         {
             repository = productRepository;
         }

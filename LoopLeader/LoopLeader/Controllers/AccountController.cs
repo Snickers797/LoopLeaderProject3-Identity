@@ -26,6 +26,7 @@ namespace LoopLeader.Controllers
         }
 
         public UserManager<ApplicationUser> UserManager { get; private set; }
+        public int PageSize = 1;
 
         //
         // GET: /Account/Login
@@ -321,14 +322,6 @@ namespace LoopLeader.Controllers
             base.Dispose(disposing);
         }
 
-        //public ActionResult MemberIndex()
-        //{
-        //    var context = new ApplicationDbContext();
-        //    var Members = context.Users.AsQueryable();
-        //    if (Members == null)
-        //        ViewBag.Message = "Users not found.";
-        //    return View(Members);
-        //}
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";

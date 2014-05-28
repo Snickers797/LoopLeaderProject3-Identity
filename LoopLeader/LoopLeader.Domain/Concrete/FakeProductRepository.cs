@@ -8,7 +8,7 @@ using LoopLeader.Domain.Entities;
 
 namespace LoopLeader.Domain.Concrete
 {
-    public class FakeProductRepository : IProductRepository
+    public class FakeProductRepository : IProduct
     {
 
         List<Product> products = new List<Product>();

@@ -11,7 +11,7 @@ namespace LoopLeader.Domain.Concrete
 {
     public class LLDbContext : DbContext
     {
-        public DbSet<Member> Members { get; set; }
+        //public DbSet<Member> Members { get; set; }
         public DbSet<Content> Content { get; set; }
         public DbSet<Product> Products { get; set; }
     }

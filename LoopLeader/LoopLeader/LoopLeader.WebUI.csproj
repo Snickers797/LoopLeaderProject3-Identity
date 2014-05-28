@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Admin2Controller.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -200,6 +201,14 @@
     <Compile Include="Migrations\201405260118021_update3.Designer.cs">
       <DependentUpon>201405260118021_update3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201405281943359_UserMod.cs" />
+    <Compile Include="Migrations\201405281943359_UserMod.Designer.cs">
+      <DependentUpon>201405281943359_UserMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201405282024510_usermod2.cs" />
+    <Compile Include="Migrations\201405282024510_usermod2.Designer.cs">
+      <DependentUpon>201405282024510_usermod2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CartIndexViewModel.cs" />
@@ -207,7 +216,6 @@
     <Compile Include="Models\EmailResponse.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MemberListViewModel.cs" />
-    <Compile Include="Models\MemberViewModel.cs" />
     <Compile Include="Models\PagingInfo.cs" />
     <Compile Include="Models\ProductsListViewModel.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
@@ -279,13 +287,11 @@
     <Content Include="Views\Shared\_MasterLayout.cshtml" />
     <Content Include="Views\Home\Thankyou.cshtml" />
     <Content Include="Views\Product\List.cshtml" />
-    <Content Include="Views\Account\MemberIndex.cshtml" />
     <Content Include="Views\Admin\MemberIndex.cshtml" />
     <Content Include="Views\Admin\MemberEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -324,6 +330,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201405260118021_update3.resx">
       <DependentUpon>201405260118021_update3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201405281943359_UserMod.resx">
+      <DependentUpon>201405281943359_UserMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201405282024510_usermod2.resx">
+      <DependentUpon>201405282024510_usermod2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

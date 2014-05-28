@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LoopLeader.Models.ApplicationUser>
+﻿@model IEnumerable<LoopLeader.Models.RegisterViewModel>
 @using LoopLeader.Models
 
 @{
@@ -39,7 +39,7 @@
                 @Html.ActionLink("Edit", "MemberEdit", new { id = item.Id }) |
                 @using (Html.BeginForm("DeleteMember", "Admin"))
                 {
-                    @Html.Hidden("MemberId", item.Id)
+                    @Html.Hidden("Id", item.Id)
                     <input type="submit" value="Delete" />
                 }             
                 @*@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@

@@ -12,6 +12,7 @@ using Microsoft.Owin.Security;
 
 namespace LoopLeader.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
 

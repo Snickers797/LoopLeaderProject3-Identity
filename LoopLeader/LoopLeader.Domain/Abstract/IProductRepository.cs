@@ -7,7 +7,7 @@ using LoopLeader.Domain.Entities;
 
 namespace LoopLeader.Domain.Abstract
 {
-    public interface IProductRepository
+    public interface IProduct
     {
         void AddProduct(Product product);
         IQueryable<Product> Products { get; }
