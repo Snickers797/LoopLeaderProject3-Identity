@@ -6,11 +6,15 @@ using System.Web.Mvc;
 using LoopLeader.Domain.Entities;
 using LoopLeader.Domain.Concrete;
 using LoopLeader.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 
 namespace LoopLeader.Controllers
 {
     public class AdminController : Controller
     {
+
         public ActionResult Index()
         {
             return View();
@@ -20,6 +24,7 @@ namespace LoopLeader.Controllers
         public ActionResult ContentIndex()
         {
             //Get a list of content to populate a drop down list.
+            ApplicationDbContext memberContext = new ApplicationDbContext();
             LLDbContext context = new LLDbContext();
             ContentRepository repo = new ContentRepository();
             ContentViewModel contentList = new ContentViewModel() { ContentList = repo.Content.ToList<Content>() };
@@ -68,29 +73,80 @@ namespace LoopLeader.Controllers
 
         public ActionResult MemberIndex()
         {
-            //Get a list of content to populate a drop down list.
-            MemberRepository repo = new MemberRepository();
-            MemberViewModel memberList = new MemberViewModel() { MemberList = repo.GetMembers.ToList<Member>() };
-            return View(memberList);
+            var memberContext = new ApplicationDbContext();
+            var Members = memberContext.Users.AsQueryable();
+            if (Members == null)
+                ViewBag.Message = "Users not found.";
+            return View(Members);
+        }
+
+        public ActionResult MemberEdit(string memberId)
+        {
+            var memberContext = new ApplicationDbContext();
+            var member = memberContext.Users.FirstOrDefault(p => p.Id == memberId);
+            return View(member);
         }
 
         [HttpPost]
-        public ActionResult MemberIndex(MemberViewModel member)
+        public ActionResult MemberEdit(ApplicationUser member)
         {
-            //After user selects an item from the drop down list, grab its info from the database.
-            MemberRepository repo = new MemberRepository();
-            Member selectedMember = (from m in repo.GetMembers
-                                     where member.MemberID == m.Id
-                                     select m).FirstOrDefault<Member>();
-            selectedMember.Id = member.MemberID;
-            //Then pass it to the form to be edited.
-            return View("MemberEditForm", selectedMember);
+            var db = new ApplicationDbContext();
+            if (ModelState.IsValid)
+            {
+                if (member.Id == "")
+                {
+                    db.Users.Add(member);
+                }
+                else
+                {
+                    // If member exists, it updates information
+                    ApplicationUser dbEntry = db.Users.Find(member.Id);
+                    if (dbEntry != null)
+                    {                   
+                        dbEntry.FirstName = member.FirstName;
+                        dbEntry.LastName = member.LastName;
+                        dbEntry.PasswordHash = member.PasswordHash;
+                        dbEntry.EmailAddress = member.EmailAddress;
+                        dbEntry.StreetAddress = member.StreetAddress;
+                        dbEntry.State = member.State;
+                        dbEntry.ZipCode = member.ZipCode;
+                        dbEntry.Country = member.Country;
+                    }
+                }
+                db.SaveChanges();
+                TempData["message"] = string.Format("{0} has been saved", member.UserName);
+                return RedirectToAction("MemberIndex");
+            }
+            else
+            {
+                return View(member);
+            }
         }
+        //public ActionResult MemberIndex()
+        //{
+        //    //Get a list of content to populate a drop down list.
+        //    MemberRepository repo = new MemberRepository();
+        //    MemberViewModel memberList = new MemberViewModel() { MemberList = repo.GetMembers.ToList<Member>() };
+        //    return View(memberList);
+        //}
 
-        public ViewResult MemberEditForm(Member formMember)
-        {
-            return View(formMember);
-        }
+        //[HttpPost]
+        //public ActionResult MemberIndex(MemberViewModel member)
+        //{
+        //    //After user selects an item from the drop down list, grab its info from the database.
+        //    MemberRepository repo = new MemberRepository();
+        //    Member selectedMember = (from m in repo.GetMembers
+        //                             where member.MemberID == m.Id
+        //                             select m).FirstOrDefault<Member>();
+        //    selectedMember.Id = member.MemberID;
+        //    //Then pass it to the form to be edited.
+        //    return View("MemberEditForm", selectedMember);
+        //}
+
+        //public ViewResult MemberEditForm(Member formMember)
+        //{
+        //    return View(formMember);
+        //}
 
         //[HttpPost]
         //public ViewResult MemberInfo(Member formMember)
@@ -127,54 +183,54 @@ namespace LoopLeader.Controllers
         //                 select m).FirstOrDefault<Member>());
         //}
 
-        [HttpPost]
-        public ViewResult MemberInfo(Member formMember)
-        {
-            MemberRepository repo = new MemberRepository();
-            LLDbContext memberDB = new LLDbContext();
-            //After we get the information back from the form...
-            if (ModelState.IsValid)
-            {
-                //...update the database with it.
+        //[HttpPost]
+        //public ViewResult MemberInfo(Member formMember)
+        //{
+        //    MemberRepository repo = new MemberRepository();
+        //    LLDbContext memberDB = new LLDbContext();
+        //    //After we get the information back from the form...
+        //    if (ModelState.IsValid)
+        //    {
+        //        //...update the database with it.
 
-                Member memberToUpdate = memberDB.Members.Find(formMember.Id);
-                if (memberToUpdate != null)
-                {
-                    memberToUpdate.UserName = formMember.UserName;
-                    memberToUpdate.FirstName = formMember.FirstName;
-                    memberToUpdate.LastName = formMember.LastName;
-                    memberToUpdate.PasswordHash = formMember.PasswordHash;
-                    memberToUpdate.Email = formMember.Email;
-                    memberToUpdate.StreetAddress1 = formMember.StreetAddress1;
-                    memberToUpdate.StreetAddress2 = formMember.StreetAddress2;
-                    memberToUpdate.City = formMember.City;
-                    memberToUpdate.State = formMember.State;
-                    memberToUpdate.Zip = formMember.Zip;
-                    memberToUpdate.IsAdmin = formMember.IsAdmin;
+        //        Member memberToUpdate = memberDB.Members.Find(formMember.Id);
+        //        if (memberToUpdate != null)
+        //        {
+        //            memberToUpdate.UserName = formMember.UserName;
+        //            memberToUpdate.FirstName = formMember.FirstName;
+        //            memberToUpdate.LastName = formMember.LastName;
+        //            memberToUpdate.PasswordHash = formMember.PasswordHash;
+        //            memberToUpdate.Email = formMember.Email;
+        //            memberToUpdate.StreetAddress1 = formMember.StreetAddress1;
+        //            memberToUpdate.StreetAddress2 = formMember.StreetAddress2;
+        //            memberToUpdate.City = formMember.City;
+        //            memberToUpdate.State = formMember.State;
+        //            memberToUpdate.Zip = formMember.Zip;
+        //            memberToUpdate.IsAdmin = formMember.IsAdmin;
                     
-                }
-                memberDB.SaveChanges();
-            }
-            //And then in this case, display a page showing the new changes.  This
-            //returns the object from the database that was passed in as a parameter.
-            return View((from m in repo.GetMembers
-                         where m.Id == formMember.Id
-                         select m).FirstOrDefault<Member>());
-        }
+        //        }
+        //        memberDB.SaveChanges();
+        //    }
+        //    //And then in this case, display a page showing the new changes.  This
+        //    //returns the object from the database that was passed in as a parameter.
+        //    return View((from m in repo.GetMembers
+        //                 where m.Id == formMember.Id
+        //                 select m).FirstOrDefault<Member>());
+        //}
 
-        public ViewResult MemberDelete(Member memberToBeDeleted)
-        {
-            return View(memberToBeDeleted);
-        }
+        //public ViewResult MemberDelete(Member memberToBeDeleted)
+        //{
+        //    return View(memberToBeDeleted);
+        //}
 
 
-        public ActionResult MemberDeleteConfirmed(Member memberToBeDeleted)
-        {
-            MemberRepository repo = new MemberRepository();
-            //First check that the
-            repo.DeleteMember(memberToBeDeleted.Id);
-            return View(memberToBeDeleted);
-        }
+        //public ActionResult MemberDeleteConfirmed(Member memberToBeDeleted)
+        //{
+        //    MemberRepository repo = new MemberRepository();
+        //    //First check that the
+        //    repo.DeleteMember(memberToBeDeleted.Id);
+        //    return View(memberToBeDeleted);
+        //}
 
         //END MEMBER PAGES
 

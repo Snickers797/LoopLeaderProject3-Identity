@@ -321,51 +321,14 @@ namespace LoopLeader.Controllers
             base.Dispose(disposing);
         }
 
-        // POST: /Account/UPDATE
-        //[HttpPost]
-        //[AllowAnonymous]
-        //[ValidateAntiForgeryToken]
-        //public async Task<ActionResult> Update(RegisterViewModel user)
+        //public ActionResult MemberIndex()
         //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        var user = new ApplicationUser()
-        //        {
-        //            UserName = model.UserName,
-        //            FirstName = model.FirstName,
-        //            LastName = model.LastName,
-        //            EmailAddress = model.EmailAddress,
-        //            StreetAddress = model.StreetAddress,
-        //            City = model.City,
-        //            State = model.State,
-        //            ZipCode = model.ZipCode,
-        //            Country = model.Country
-        //        };
-        //        var result = await UserManager.CreateAsync(user, model.Password);
-        //        if (result.Succeeded)
-        //        {
-        //            await SignInAsync(user, isPersistent: false);
-        //            return RedirectToAction("Index", "Home");
-        //        }
-        //        else
-        //        {
-        //            AddErrors(result);
-        //        }
-        //    }
-
-        //    // If we got this far, something failed, redisplay form
-        //    return View(model);
+        //    var context = new ApplicationDbContext();
+        //    var Members = context.Users.AsQueryable();
+        //    if (Members == null)
+        //        ViewBag.Message = "Users not found.";
+        //    return View(Members);
         //}
-        public ActionResult MemberIndex()
-        {
-            var context = new ApplicationDbContext();
-            var Members = context.Users.AsQueryable();
-            if (Members == null)
-                ViewBag.Message = "Users not found.";
-            return View(Members);
-        }
-
-
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";

@@ -267,11 +267,10 @@
     <Content Include="Views\Admin\ContentIndex.cshtml" />
     <Content Include="Views\Admin\ContentInfo.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Admin\MemberDelete.cshtml" />
-    <Content Include="Views\Admin\MemberDeleteConfirmed.cshtml" />
-    <Content Include="Views\Admin\MemberEditForm.cshtml" />
-    <Content Include="Views\Admin\MemberIndex2.cshtml" />
-    <Content Include="Views\Admin\MemberInfo.cshtml" />
+    <Content Include="Views\Admin\MemberDelete2.cshtml" />
+    <Content Include="Views\Admin\MemberDeleteConfirmed2.cshtml" />
+    <Content Include="Views\Admin\MemberEditForm2.cshtml" />
+    <Content Include="Views\Admin\MemberInfo2.cshtml" />
     <Content Include="Views\Admin\ProductEditForm.cshtml" />
     <Content Include="Views\Admin\ProductIndex.cshtml" />
     <Content Include="Views\Admin\ProductInfo.cshtml" />
@@ -281,6 +280,8 @@
     <Content Include="Views\Home\Thankyou.cshtml" />
     <Content Include="Views\Product\List.cshtml" />
     <Content Include="Views\Account\MemberIndex.cshtml" />
+    <Content Include="Views\Admin\MemberIndex.cshtml" />
+    <Content Include="Views\Admin\MemberEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
