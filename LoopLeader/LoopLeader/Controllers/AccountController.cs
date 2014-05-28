@@ -26,7 +26,6 @@ namespace LoopLeader.Controllers
         }
 
         public UserManager<ApplicationUser> UserManager { get; private set; }
-        public int PageSize = 1;
 
         //
         // GET: /Account/Login
