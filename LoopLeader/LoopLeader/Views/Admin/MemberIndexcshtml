@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LoopLeader.Models.RegisterViewModel>
+﻿@model IEnumerable<LoopLeader.Models.ApplicationUser>
 @using LoopLeader.Models
 
 @{
@@ -36,7 +36,13 @@
             <td>@Html.DisplayFor(modelItem => item.ZipCode)</td>
             <td>@Html.DisplayFor(modelItem => item.Country)</td>
             <td>
-                @Html.ActionLink("Edit", "MemberEdit", new { id = item.Id }) |
+                @Html.ActionLink("Edit", "MemberEdit", new { id = item.Id }) 
+                @using (Html.BeginForm("MemberEdit", "Admin"))
+                {
+                    @Html.Hidden("Id", item.Id)
+                    <input type="submit" value="Edit" />
+                }   
+                |
                 @using (Html.BeginForm("DeleteMember", "Admin"))
                 {
                     @Html.Hidden("Id", item.Id)
