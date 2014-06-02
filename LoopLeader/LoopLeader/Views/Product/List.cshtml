@@ -9,6 +9,44 @@
 
 <h2>The Loop Leader Price List</h2>
 
+<table style="width:100%;">
+    <tr><td><p><img src="~/Images/dog-99213_640.png" /></p>&nbsp;</td>     <td><p></p>&nbsp;</td><td>&nbsp;</td></tr>
+    
+    <tr><td><p><script src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
+        data-key="6aydCRGwvSl1cB+4vWLeBcGwaN8jwCyhLX6Cz1Okt/RS+3jATD"
+        data-redirect="http://www.theloopleader.com/home/ttlReddirect.cshtml"
+        data-label="Buy Now"
+        data-name="TLL001"
+        data-description="The Loop Leader 001"
+        data-amount="19.99"
+        data-shipping="5.00"
+        data-guest-checkout="true"
+        data-type="options"
+        data-options="TLL:::19.99|||TLLx2 $2 disc:::37.98|||TLLx3 $5 disc:::54.97"
+        data-test="true">
+</script></p>&nbsp;</td>      <td><p></p>&nbsp;</td><td>&nbsp;</td></tr>
+
+    <tr><td><p></p>&nbsp;</td>      <td><p></p>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td><p></p>&nbsp;</td>      <td><p></p>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td><p></p>&nbsp;</td>      <td><p></p>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td><p></p>&nbsp;</td>      <td><p></p>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+
+
+@*<script src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
+        data-key="6aydCRGwvSl1cB+4vWLeBcGwaN8jwCyhLX6Cz1Okt/RS+3jATD"
+        data-redirect="http://www.theloopleader.com/home/ttlReddirect.cshtml"
+        data-label="Buy Now"
+        data-name="TLL001"
+        data-description="The Loop Leader 001"
+        data-amount="19.99"
+        data-shipping="5.00"
+        data-guest-checkout="true"
+        data-type="options"
+        data-options="TLL:::19.99|||TLLx2 $2 disc:::37.98|||TLLx3 $5 disc:::54.97">
+</script>*@
+
+
 @foreach (var p in Model.Products)
 {
     /*<div class="item">
@@ -25,3 +63,7 @@
         Url.Action returns a string; Params: 1) controller method, 2) routeValues object *@
     @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
 </div>
+
+
+
+
