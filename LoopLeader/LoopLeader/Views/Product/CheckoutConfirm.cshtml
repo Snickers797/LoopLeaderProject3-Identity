@@ -1,0 +1,24 @@
+﻿@model LoopLeader.Models.ProductsListViewModel
+@{
+    ViewBag.Title = "CheckoutConfirm";
+}
+
+<h2>CheckoutConfirm</h2>
+@{
+    decimal total = @Model.Quantity * (decimal)19.99;
+    @Model.Total = total;
+    
+    
+    <script src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
+        data-key="ASlm5AzbvQLwhy6WX0dleTppoztXDFuj7ViSNetI9nk7oxCyTz"
+        data-redirect="http://theloopleader.azurewebsites.net/"
+        data-label="Purchase"
+        data-name="LoopLeader"
+        data-description="A new and innovative way to walk your dog!"
+        data-amount=@Model.Total
+        data-shipping="5.00"
+        data-type="simple">
+</script>
+    
+}
+

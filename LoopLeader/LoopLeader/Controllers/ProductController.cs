@@ -60,7 +60,10 @@ namespace LoopLeader.Controllers
 
 
 
-
+        public ActionResult CheckoutConfirm(ProductsListViewModel viewModel)
+        {
+            return View(viewModel);
+        }
 
 
     }
