@@ -3,12 +3,16 @@
     ViewBag.Title = "CheckoutConfirm";
 }
 
-<h2>CheckoutConfirm</h2>
+<h2>Checkout Confirmation</h2>
 @{
     decimal total = @Model.Quantity * (decimal)19.99;
     @Model.Total = total;
+
+}
+        
     
-    
+@if(Model.Total > 0)
+{     
     <script src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript"
         data-key="ASlm5AzbvQLwhy6WX0dleTppoztXDFuj7ViSNetI9nk7oxCyTz"
         data-redirect="http://theloopleader.azurewebsites.net/"
@@ -19,6 +23,10 @@
         data-shipping="5.00"
         data-type="simple">
 </script>
-    
+}
+else
+{
+    @: Invalid quantity detected.  Please check that you selected atleast 1 product. <br />
+    @Html.ActionLink("Return to product list","List")
 }
 
