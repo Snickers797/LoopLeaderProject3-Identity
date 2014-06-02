@@ -1,0 +1,92 @@
+﻿@model LoopLeader.Models.ApplicationUser
+@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "Member Edit ";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Edit Member </h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Member Information</h4> 
+        <hr />
+        @Html.ValidationSummary(true)
+        <section class="form-group">
+            @Html.LabelFor(model => model.FirstName, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.LastName, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.EmailAddress, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.EmailAddress)
+                @Html.ValidationMessageFor(model => model.EmailAddress)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.StreetAddress, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.StreetAddress)
+                @Html.ValidationMessageFor(model => model.StreetAddress)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.City)
+                @Html.ValidationMessageFor(model => model.City)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.State, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.State)
+                @Html.ValidationMessageFor(model => model.State)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.ZipCode, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.ZipCode)
+                @Html.ValidationMessageFor(model => model.ZipCode)
+            </section>
+        </section>
+
+        <section class="form-group">
+            @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+            <section class="col-md-10">
+                @Html.EditorFor(model => model.Country)
+                @Html.ValidationMessageFor(model => model.Country)
+            </section>
+        </section>
+
+        <section class="form-group">
+            <section class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </section>
+        </section>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "MemberIndex")
+</div>

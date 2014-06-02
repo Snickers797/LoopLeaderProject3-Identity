@@ -78,9 +78,7 @@ namespace LoopLeader.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser() { UserName = model.UserName, FirstName = model.FirstName,
-                    LastName = model.LastName, EmailAddress = model.EmailAddress, StreetAddress = model.StreetAddress,
-                    City = model.City, State = model.State, ZipCode = model.ZipCode, Country = model.Country };
+                var user = model.GetUser();
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -137,6 +135,7 @@ namespace LoopLeader.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Manage(ManageUserViewModel model)
         {
+            //ApplicationUser Model = UserManager.FindById(User.Identity.GetUserId());
             bool hasPassword = HasPassword();
             ViewBag.HasLocalPassword = hasPassword;
             ViewBag.ReturnUrl = Url.Action("Manage");
@@ -319,6 +318,20 @@ namespace LoopLeader.Controllers
                 UserManager = null;
             }
             base.Dispose(disposing);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult Index()
+        {
+            var Db = new ApplicationDbContext();
+            var users = Db.Users;
+            var model = new List<LoopLeader.Models.RegisterViewModel.EditUserViewModel>();
+            foreach (var user in users)
+            {
+                var u = new LoopLeader.Models.RegisterViewModel.EditUserViewModel(user);
+                model.Add(u);
+            }
+            return View(model);
         }
 
         #region Helpers
