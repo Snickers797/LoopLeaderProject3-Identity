@@ -21,7 +21,10 @@ namespace LoopLeader.Controllers
             return View(homeContent);
         }
 
-
+        public ActionResult Info()
+        {
+            return View();
+        }
 
         public ActionResult About()
         {

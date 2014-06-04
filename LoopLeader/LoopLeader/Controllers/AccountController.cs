@@ -64,6 +64,7 @@ namespace LoopLeader.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
+        //[Authorize(Roles = "Admin, User")]
         public ActionResult Register()
         {
             return View();
@@ -72,6 +73,7 @@ namespace LoopLeader.Controllers
         //
         // POST: /Account/Register
         [HttpPost]
+        //[Authorize(Roles = "Admin, User")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
@@ -320,19 +322,6 @@ namespace LoopLeader.Controllers
             base.Dispose(disposing);
         }
 
-        [Authorize(Roles = "Admin")]
-        public ActionResult Index()
-        {
-            var Db = new ApplicationDbContext();
-            var users = Db.Users;
-            var model = new List<LoopLeader.Models.RegisterViewModel.EditUserViewModel>();
-            foreach (var user in users)
-            {
-                var u = new LoopLeader.Models.RegisterViewModel.EditUserViewModel(user);
-                model.Add(u);
-            }
-            return View(model);
-        }
 
         #region Helpers
         // Used for XSRF protection when adding external logins

@@ -22,7 +22,7 @@ h1 {
     text-align:right;
 }
 
-div
+.index
 {
     clear:both;
     margin-top: 50px;
@@ -31,7 +31,39 @@ div
     margin-bottom: 20px;
     padding:40px 40px; 
     background:#dddddd;
-    width:800px;
+    width:1000px;
+    height:380px;
+}
+
+.grayback
+{
+    clear:both;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding:40px 40px; 
+    background:#dddddd;
+    width:1000px;
+}
+
+.rotator {
+    margin-left: 10px;
+    float: left;
+}
+
+#picture {
+    width: 570px;
+    height: 360px;
+    border: 5px solid black;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
 }
 
 
@@ -195,7 +227,7 @@ nav.footerNav a:hover,nav.footerNav a:active {
 /* Div */
 .Admin {
     float:left;
-    width: 400px;
+    width: 1000px;
 }
 
 

@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace LoopLeader.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize]//(Roles = "Admin")]
     public class AdminController : Controller
     {
         public AdminController()
@@ -85,32 +85,36 @@ namespace LoopLeader.Controllers
 
         //START MEMBER PAGES
 
-        public ActionResult MembersIndex()
+        public ActionResult MemberIndex()
         {
             var db = new ApplicationDbContext();
             var members = db.Users;
-            var model = new List<LoopLeader.Models.RegisterViewModel.EditUserViewModel>();
+            var model = new List<EditUserViewModel>();
             foreach (var member in members)
             {
-                var u = new LoopLeader.Models.RegisterViewModel.EditUserViewModel(member);
+                var u = new EditUserViewModel(member);
                 model.Add(u);
             }
             return View(model);
+        }
+
+        public ActionResult CreateMember()
+        {
+            return View("MemberEdit", new EditUserViewModel());
         }
 
         public ActionResult MemberEdit(string id, ManageMessageId? Message = null)
         {
             var db = new ApplicationDbContext();
             var member = db.Users.First(u => u.UserName == id);
-            var model = new LoopLeader.Models.RegisterViewModel.EditUserViewModel(member);
+            var model = new EditUserViewModel(member);
             ViewBag.MessageId = Message;
             return View(model);
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> MemberEdit(LoopLeader.Models.RegisterViewModel.EditUserViewModel model)
+        public async Task<ActionResult> MemberEdit(EditUserViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -118,9 +122,15 @@ namespace LoopLeader.Controllers
                 var member = db.Users.First(u => u.UserName == model.UserName);
 
                 // Update the user data:
+                member.UserName = model.UserName;
                 member.FirstName = model.FirstName;
                 member.LastName = model.LastName;
                 member.EmailAddress = model.EmailAddress;
+                member.StreetAddress = model.StreetAddress;
+                member.City = model.City;
+                member.State = model.State;
+                member.ZipCode = model.ZipCode;
+                member.Country = model.Country;
                 db.Entry(member).State = System.Data.Entity.EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Members");
@@ -134,7 +144,7 @@ namespace LoopLeader.Controllers
         {
             var db = new ApplicationDbContext();
             var member = db.Users.First(u => u.UserName == id);
-            var model = new LoopLeader.Models.RegisterViewModel.EditUserViewModel(member);
+            var model = new EditUserViewModel(member);
             if (member == null)
             {
                 return HttpNotFound();
@@ -143,7 +153,7 @@ namespace LoopLeader.Controllers
         }
 
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("MemberDelete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
@@ -151,171 +161,39 @@ namespace LoopLeader.Controllers
             var member = db.Users.First(u => u.UserName == id);
             db.Users.Remove(member);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Members");
         }
 
+        public ActionResult MemberRoles(string id)
+        {
+            var Db = new ApplicationDbContext();
+            var user = Db.Users.First(u => u.UserName == id);
+            var model = new SelectUserRolesViewModel(user);
+            return View(model);
+        }
 
-        //public ActionResult MemberIndex()
-        //{
-        //    var memberContext = new ApplicationDbContext();
-        //    var Members = memberContext.Users.AsQueryable();
-        //    if (Members == null)
-        //        ViewBag.Message = "Users not found.";
-        //    return View(Members);
-        //}
-
-        //public ActionResult MemberEdit(string memberId)
-        //{
-        //    var memberContext = new ApplicationDbContext();
-        //    var member = memberContext.Users.FirstOrDefault(p => p.Id == memberId);
-        //    return View(member);
-        //}
-
-        //[HttpPost]
-        //public ActionResult MemberEdit(ApplicationUser member)
-        //{
-        //    var db = new ApplicationDbContext();
-        //    if (ModelState.IsValid)
-        //    {
-        //        if (member.Id == "")
-        //        {
-        //            db.Users.Add(member);
-        //        }
-        //        else
-        //        {
-        //            // If member exists, it updates information
-        //            ApplicationUser dbEntry = db.Users.Find(member.Id);
-        //            if (dbEntry != null)
-        //            {                   
-        //                dbEntry.FirstName = member.FirstName;
-        //                dbEntry.LastName = member.LastName;
-        //                dbEntry.PasswordHash = member.PasswordHash;
-        //                dbEntry.EmailAddress = member.EmailAddress;
-        //                dbEntry.StreetAddress = member.StreetAddress;
-        //                dbEntry.State = member.State;
-        //                dbEntry.ZipCode = member.ZipCode;
-        //                dbEntry.Country = member.Country;
-        //            }
-        //        }
-        //        db.SaveChanges();
-        //        TempData["message"] = string.Format("{0} has been saved", member.UserName);
-        //        return RedirectToAction("MemberIndex");
-        //    }
-        //    else
-        //    {
-        //        return View(member);
-        //    }
-        //}
-        //public ActionResult MemberIndex()
-        //{
-        //    //Get a list of content to populate a drop down list.
-        //    MemberRepository repo = new MemberRepository();
-        //    MemberViewModel memberList = new MemberViewModel() { MemberList = repo.GetMembers.ToList<Member>() };
-        //    return View(memberList);
-        //}
-
-        //[HttpPost]
-        //public ActionResult MemberIndex(MemberViewModel member)
-        //{
-        //    //After user selects an item from the drop down list, grab its info from the database.
-        //    MemberRepository repo = new MemberRepository();
-        //    Member selectedMember = (from m in repo.GetMembers
-        //                             where member.MemberID == m.Id
-        //                             select m).FirstOrDefault<Member>();
-        //    selectedMember.Id = member.MemberID;
-        //    //Then pass it to the form to be edited.
-        //    return View("MemberEditForm", selectedMember);
-        //}
-
-        //public ViewResult MemberEditForm(Member formMember)
-        //{
-        //    return View(formMember);
-        //}
-
-        //[HttpPost]
-        //public ViewResult MemberInfo(Member formMember)
-        //{
-        //    MemberRepository repo = new MemberRepository();
-        //    LLDbContext memberDB = new LLDbContext();
-        //    //After we get the information back from the form...
-        //    if (ModelState.IsValid)
-        //    {
-        //        //...update the database with it.
-
-        //        Member memberToUpdate = memberDB.Members.Find(formMember.Id);
-        //        if (memberToUpdate != null)
-        //        {
-        //            memberToUpdate.UserName = formMember.UserName;
-        //            memberToUpdate.FirstName = formMember.FirstName;
-        //            memberToUpdate.LastName = formMember.LastName;
-        //            memberToUpdate.PasswordHash = formMember.PasswordHash;
-        //            memberToUpdate.Email = formMember.Email;
-        //            memberToUpdate.StreetAddress1 = formMember.StreetAddress1;
-        //            memberToUpdate.StreetAddress2 = formMember.StreetAddress2;
-        //            memberToUpdate.City = formMember.City;
-        //            memberToUpdate.State = formMember.State;
-        //            memberToUpdate.Zip = formMember.Zip;
-        //            memberToUpdate.IsAdmin = formMember.IsAdmin;
-
-        //        }
-        //        memberDB.SaveChanges();
-        //    }
-        //    //And then in this case, display a page showing the new changes.  This
-        //    //returns the object from the database that was passed in as a parameter.
-        //    return View((from m in repo.GetMembers
-        //                 where m.Id == formMember.Id
-        //                 select m).FirstOrDefault<Member>());
-        //}
-
-        //[HttpPost]
-        //public ViewResult MemberInfo(Member formMember)
-        //{
-        //    MemberRepository repo = new MemberRepository();
-        //    LLDbContext memberDB = new LLDbContext();
-        //    //After we get the information back from the form...
-        //    if (ModelState.IsValid)
-        //    {
-        //        //...update the database with it.
-
-        //        Member memberToUpdate = memberDB.Members.Find(formMember.Id);
-        //        if (memberToUpdate != null)
-        //        {
-        //            memberToUpdate.UserName = formMember.UserName;
-        //            memberToUpdate.FirstName = formMember.FirstName;
-        //            memberToUpdate.LastName = formMember.LastName;
-        //            memberToUpdate.PasswordHash = formMember.PasswordHash;
-        //            memberToUpdate.Email = formMember.Email;
-        //            memberToUpdate.StreetAddress1 = formMember.StreetAddress1;
-        //            memberToUpdate.StreetAddress2 = formMember.StreetAddress2;
-        //            memberToUpdate.City = formMember.City;
-        //            memberToUpdate.State = formMember.State;
-        //            memberToUpdate.Zip = formMember.Zip;
-        //            memberToUpdate.IsAdmin = formMember.IsAdmin;
-                    
-        //        }
-        //        memberDB.SaveChanges();
-        //    }
-        //    //And then in this case, display a page showing the new changes.  This
-        //    //returns the object from the database that was passed in as a parameter.
-        //    return View((from m in repo.GetMembers
-        //                 where m.Id == formMember.Id
-        //                 select m).FirstOrDefault<Member>());
-        //}
-
-        //public ViewResult MemberDelete(Member memberToBeDeleted)
-        //{
-        //    return View(memberToBeDeleted);
-        //}
-
-
-        //public ActionResult MemberDeleteConfirmed(Member memberToBeDeleted)
-        //{
-        //    MemberRepository repo = new MemberRepository();
-        //    //First check that the
-        //    repo.DeleteMember(memberToBeDeleted.Id);
-        //    return View(memberToBeDeleted);
-        //}
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult MemberRoles(SelectUserRolesViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var idManager = new LoopLeader.Models.ApplicationDbContext.IdentityManager();
+                var Db = new ApplicationDbContext();
+                var user = Db.Users.First(u => u.UserName == model.UserName);
+                idManager.ClearUserRoles(user.Id);
+                foreach (var role in model.Roles)
+                {
+                    if (role.Selected)
+                    {
+                        idManager.AddUserToRole(user.Id, role.RoleName);
+                    }
+                }
+                return RedirectToAction("Members");
+            }
+            return View();
+        }
+     
         //END MEMBER PAGES
 
         //START PRODUCT PAGES
@@ -339,6 +217,11 @@ namespace LoopLeader.Controllers
             selectedProduct.ProductID = product.ProductID;
             //Then pass it to the form to be edited.
             return View("ProductEditForm", selectedProduct);
+        }
+
+        public ViewResult CreateProduct()
+        {
+            return View("ProductEditForm", new Product());
         }
 
         public ViewResult ProductEditForm(Product formProduct)

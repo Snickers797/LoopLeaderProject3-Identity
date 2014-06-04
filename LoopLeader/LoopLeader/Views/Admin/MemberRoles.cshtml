@@ -1,0 +1,43 @@
+﻿@model LoopLeader.Models.SelectUserRolesViewModel
+
+@{
+    ViewBag.Title = "Member Roles";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
+}
+
+<h2>Roles for Users and Members</h2>
+<hr />
+@using (Html.BeginForm("MemberRoles", "Admin", FormMethod.Post, new { encType = "multipart/form-data", name = "myform" }))
+{
+    @Html.AntiForgeryToken()
+
+    <section class="form-horizontal">
+        @Html.ValidationSummary(true)
+        <section class="form-group">
+            <section class="col-md-10">
+                @Html.HiddenFor(model => model.UserName)
+            </section>
+        </section>
+
+        <h4>Select Role Assignments</h4>
+        <br />
+
+
+        <table>
+            <tr>
+                <th>Select</th>
+                <th>Role</th>
+            </tr>
+            @Html.EditorFor(model => model.Roles)
+        </table>
+        <br />
+        <hr />  
+
+        <section class="form-group">
+            <section class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </section>
+        </section>
+    </section>
+
+}

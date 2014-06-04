@@ -225,6 +225,10 @@
     <Compile Include="Migrations\201405282123210_fix.Designer.cs">
       <DependentUpon>201405282123210_fix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201406021057129_updated.cs" />
+    <Compile Include="Migrations\201406021057129_updated.Designer.cs">
+      <DependentUpon>201406021057129_updated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CartIndexViewModel.cs" />
@@ -254,6 +258,25 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Images\dog-99213_640.png" />
+    <Content Include="Images\dog1.jpg" />
+    <Content Include="Images\dog2.jpg" />
+    <Content Include="Images\dog3.jpg" />
+    <Content Include="Images\dog4.jpg" />
+    <Content Include="Images\dog5.jpg" />
+    <Content Include="Images\dog6.jpg" />
+    <Content Include="Images\dog7.jpg" />
+    <Content Include="Images\dogpic1.jpg" />
+    <Content Include="Images\dogpic2.jpg" />
+    <Content Include="Images\dogpic3.jpg" />
+    <Content Include="Images\dogpic4.jpg" />
+    <Content Include="Images\DogWalkingImage1.jpg" />
+    <Content Include="Images\DogWalkingImage2.jpg" />
+    <Content Include="Images\DogWalkingImage3.jpg" />
+    <Content Include="Images\DogWalkingImage4.jpg" />
+    <Content Include="Images\DogWalkingImage5.jpg" />
+    <Content Include="Images\DogWalkingImage6.jpg" />
+    <Content Include="Images\MissgraciemissdaisyandI.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
@@ -308,10 +331,7 @@
     <Content Include="Views\Shared\_MasterLayout.cshtml" />
     <Content Include="Views\Home\Thankyou.cshtml" />
     <Content Include="Views\Product\List.cshtml" />
-    <Content Include="Views\Admin\MemberDelete.cshtml" />
-    <None Include="Views\Admin\MemberIndexcshtml" />
-    <None Include="Views\Admin\MemberEditcshtml" />
-    <Content Include="Views\Admin\MembersIndex.cshtml" />
+    <Content Include="Views\Admin\MemberIndex.cshtml" />
     <Content Include="Views\Admin\MemberEdit.cshtml" />
     <Content Include="Views\Product\CheckoutConfirm.cshtml" />
   </ItemGroup>
@@ -319,6 +339,17 @@
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
     <Folder Include="Views\ViewTest\" />
+    <Content Include="Views\Shared\EditorTemplates\SelectRoleEditorViewModel.cshtml" />
+    <Content Include="Views\Home\Info.cshtml" />
+    <Content Include="Views\Admin\MemberDelete.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Admin\MemberRoles.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -363,6 +394,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201405282123210_fix.resx">
       <DependentUpon>201405282123210_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201406021057129_updated.resx">
+      <DependentUpon>201406021057129_updated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

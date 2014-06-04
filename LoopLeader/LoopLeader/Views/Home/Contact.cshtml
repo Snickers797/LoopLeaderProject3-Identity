@@ -6,40 +6,17 @@
     Layout = "~/Views/Shared/_IndexLayout.cshtml";
 }
 
-<h2>Contact</h2>
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
-    <title>Contact</title>
-</head>
-<body>
-
+<h2>Contact Us</h2>
 
     @using (Html.BeginForm())
     {
         @Html.ValidationSummary()
         <table style="width:100%;">
-            <tr><td><p>First name: </p>&nbsp;</td>     <td><p>@Html.TextBoxFor(x => x.FirstName) </p>&nbsp;</td><td>&nbsp;</td></tr>
-            <tr><td><p>Last name: </p>&nbsp;</td>      <td><p>@Html.TextBoxFor(x => x.LastName)</p>&nbsp;</td><td>&nbsp;</td></tr>
-            <tr><td><p>Email: </p>&nbsp;</td>          <td><p>@Html.TextBoxFor(x => x.Email)</p>&nbsp;</td><td>&nbsp;</td></tr>
-            <tr><td><p>Phone: </p>&nbsp;</td>          <td><p>@Html.TextBoxFor(x => x.Phone)</p>&nbsp;</td><td>&nbsp;</td></tr>
-            <tr><td><p>Comment: </p>&nbsp;</td>        <td><p>@Html.TextAreaFor(x => x.Comment)</p>&nbsp;</td><td>&nbsp;</td></tr>
-            <tr><td><p></p>&nbsp;</td>                 <td><p><input type="submit" value="Submit Request" /></p>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>First name: &nbsp;</td>     <td>@Html.TextBoxFor(x => x.FirstName) &nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>Last name: &nbsp;</td>      <td>@Html.TextBoxFor(x => x.LastName)&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>Email: &nbsp;</td>          <td>@Html.TextBoxFor(x => x.Email)&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>Phone: &nbsp;</td>          <td>@Html.TextBoxFor(x => x.Phone)&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>Comment: &nbsp;</td>        <td>@Html.TextAreaFor(x => x.Comment)&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td>                 <td><input type="submit" value="Submit Request" />&nbsp;</td><td>&nbsp;</td></tr>
         </table>
-
-        @*<p>Your first name: @Html.TextBoxFor(x => x.FirstName)</p>
-            <p>Your last name: @Html.TextBoxFor(x => x.LastName) </p>
-            <p>Your email: @Html.TextBoxFor(x => x.Email)</p>
-            <p>Your phone: @Html.TextBoxFor(x => x.Phone)</p>
-            <p>
-                Comment: @Html.TextAreaFor(x => x.Comment)
-            </p>*@
-        @*<input type="submit" value="Submit Request" />*@
     }
-
-</body>
-</html>
